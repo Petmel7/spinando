@@ -47,17 +47,46 @@
         </div>
 
         <button class="header__menu-button js-menu-toggle" aria-label="Toggle menu">
-            <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <rect y="4" width="24" height="2" rx="1" fill=""></rect>
-                <rect y="11" width="24" height="2" rx="1" fill=""></rect>
-                <rect y="18" width="24" height="2" rx="1" fill=""></rect>
+            <svg class="burger-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect y="4" width="24" height="2" rx="1" class="icon-bar" />
+                <rect y="11" width="24" height="2" rx="1" class="icon-bar" />
+                <rect y="18" width="24" height="2" rx="1" class="icon-bar" />
             </svg>
-            <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <line x1="4" y1="4" x2="20" y2="20" stroke="" stroke-width="2" />
-                <line x1="20" y1="4" x2="4" y2="20" stroke="" stroke-width="2" />
+            <svg class="close-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="4" x2="20" y2="20" class="icon-cross" />
+                <line x1="20" y1="4" x2="4" y2="20" class="icon-cross" />
             </svg>
         </button>
     </header>
+    <main>
+        <section class="hero">
+            <div class="hero__background">
+                <img class="hero__foreground-img" src="img/hero.png" alt="Hero background" title="Hero Image">
+            </div>
+
+            <div class="hero__content">
+                <div class="hero__rating" itemscope itemtype="http://schema.org/Game">
+                    <div class="hero__rating-label">Overall Rating:</div>
+                    <meta itemprop="name" content="https://bet-label.si/">
+                    <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <span itemprop="ratingValue" class="hero__rating-value">91</span>
+                        <span class="hero__rating-separator">/</span>
+                        <span itemprop="bestRating" class="hero__rating-max">100</span>
+                        <meta itemprop="reviewCount" content="100">
+                    </span>
+                </div>
+
+                <h1 class="hero__title">Welcome Casino Spinando Italy</h1>
+
+                <p class="hero__text">
+                    Si possono effettuare scommesse in pochi clic e bastano appena 24
+                    ore per ricevere il denaro vinto.
+                </p>
+
+                <a href="#" class="hero__button button">More Info</a>
+            </div>
+        </section>
+    </main>
     <script src="./js/menu-toggle.js" defer></script>
 </body>
 
