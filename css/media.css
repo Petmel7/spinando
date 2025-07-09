@@ -87,3 +87,79 @@
         height: 18px;
     }
 }
+
+/* Hero */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero__content {
+        max-width: 400px;
+    }
+
+    .hero__rating,
+    .hero__title,
+    .hero__text {
+        margin-bottom: 15px;
+    }
+
+    .hero__rating-label {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .hero__title {
+        font-size: 24px;
+        max-width: 300px;
+    }
+
+    .hero__text {
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 350px;
+    }
+
+    .hero__button {
+        padding: 14px 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+
+        min-height: 50vh;
+    }
+
+    .hero__rating-label {
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    .hero__content {
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .hero__rating,
+    .hero__title,
+    .hero__text {
+        margin-bottom: 5px;
+    }
+
+    .hero__title {
+        font-size: 20px;
+        max-width: 250px;
+    }
+
+    .hero__text {
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    .hero__button {
+        padding: 12px 32px;
+        font-size: 13px;
+    }
+}

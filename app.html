@@ -59,33 +59,115 @@
         </button>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero__background">
-                <img class="hero__foreground-img" src="img/hero.png" alt="Hero background" title="Hero Image">
-            </div>
+        <div class="layout">
+            <aside class="sidebar">
+                <div class="sidebar__scroll">
+                    <div class="sidebar__quick-button">Quicklinks</div>
+                    <ul class="sidebar__menu">
+                        <li class="sidebar__menu-item">
+                            <a href="#" class="sidebar__menu-link">
+                                <img src="img/sidebar1.svg" alt="">
+                                <span>Games</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <a href="#" class="sidebar__menu-link">
+                                <img src="img/sidebar2.svg" alt="">
+                                <span>Live dealers</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <a href="#" class="sidebar__menu-link">
+                                <img src="img/sidebar3.svg" alt="">
+                                <span>Promotions</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <a href="#" class="sidebar__menu-link">
+                                <img src="img/sidebar4.svg" alt="">
+                                <span>Tournaments</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <a href="#" class="sidebar__menu-link">
+                                <img src="img/sidebar5.svg" alt="">
+                                <span>Hall of fame</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <a href="#" class="sidebar__menu-link">
+                                <img src="img/sidebar6.svg" alt="">
+                                <span>VIP program</span>
+                            </a>
+                        </li>
+                    </ul>
 
-            <div class="hero__content">
-                <div class="hero__rating" itemscope itemtype="http://schema.org/Game">
-                    <div class="hero__rating-label">Overall Rating:</div>
-                    <meta itemprop="name" content="https://bet-label.si/">
-                    <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-                        <span itemprop="ratingValue" class="hero__rating-value">91</span>
-                        <span class="hero__rating-separator">/</span>
-                        <span itemprop="bestRating" class="hero__rating-max">100</span>
-                        <meta itemprop="reviewCount" content="100">
-                    </span>
+                    <div class="sidebar__links">
+                        <div class="sidebar__nav-button">Navigation</div>
+                        <ul class="sidebar__links-list">
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">Review of 22Bet</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">Registration</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">22Bet Betting Expert Reviews</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">Layouts and navigation</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">Sports betting</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">Sports offers</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">Live betting</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">Cash out</a>
+                            </li>
+                            <li class="sidebar__links-item">
+                                <a href="#" class="sidebar__links-link">Live stream</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <section class="hero">
+                <div class="hero__background">
+                    <img class="hero__foreground-img" src="img/hero.png" alt="Hero background" title="Hero Image">
                 </div>
 
-                <h1 class="hero__title">Welcome Casino Spinando Italy</h1>
+                <div class="hero__content">
+                    <div class="hero__rating" itemscope itemtype="http://schema.org/Game">
+                        <div class="hero__rating-label">Overall Rating:</div>
+                        <meta itemprop="name" content="https://bet-label.si/">
+                        <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                            <span itemprop="ratingValue" class="hero__rating-value">91</span>
+                            <span class="hero__rating-separator">/</span>
+                            <span itemprop="bestRating" class="hero__rating-max">100</span>
+                            <meta itemprop="reviewCount" content="100">
+                        </span>
+                    </div>
 
-                <p class="hero__text">
-                    Si possono effettuare scommesse in pochi clic e bastano appena 24
-                    ore per ricevere il denaro vinto.
-                </p>
+                    <h1 class="hero__title">
+                        <span class="hero__title-icons hero__title-icons--left"></span>
+                        <span class="hero__title-text">Welcome Casino Spinando Italy</span>
+                        <span class="hero__title-icons hero__title-icons--right"></span>
+                    </h1>
 
-                <a href="#" class="hero__button button">More Info</a>
-            </div>
-        </section>
+                    <p class="hero__text">
+                        Si possono effettuare scommesse in pochi clic e bastano appena 24
+                        ore per ricevere il denaro vinto.
+                    </p>
+
+                    <a href="#" class="hero__button button">More Info</a>
+                </div>
+            </section>
+        </div>
     </main>
     <script src="./js/menu-toggle.js" defer></script>
 </body>
