@@ -416,7 +416,9 @@ a {
 }
 
 .bet-info__table {
-    border: solid 2px #FFC700;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+    width: 100%;
 }
 
 .bet-info__table--icon {
@@ -429,5 +431,9 @@ a {
 }
 
 .bet-info__row {
-    background-color: #976EFF;
+    background-color: #3B0962;
+}
+
+.bet-info__row td {
+    padding: 12px 20px;
 }
