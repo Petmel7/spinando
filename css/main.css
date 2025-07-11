@@ -321,19 +321,22 @@ a {
 /* Aside */
 .layout {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 0;
-    flex-direction: row;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
 .sidebar {
+    /* width: 280px; */
+    flex-shrink: 0;
     padding: 100px 12px 0 20px;
-    order: 0;
-    height: 100%;
-    position: relative;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .sidebar__scroll {
@@ -386,4 +389,45 @@ a {
     height: 0;
     overflow: hidden;
     transition: height 0.4s ease;
+}
+
+/* info */
+.info {
+    background-color: #100724;
+    padding: 20px;
+}
+
+.info__text {
+    margin-bottom: 16px;
+}
+
+/* bet-info */
+.bet-info {
+    background-color: #100724;
+    padding: 20px;
+}
+
+.bet-info__title {
+    text-align: center;
+}
+
+.bet-info__block {
+    display: flex;
+}
+
+.bet-info__table {
+    border: solid 2px #FFC700;
+}
+
+.bet-info__table--icon {
+    margin-right: 20px;
+}
+
+.bet-info__table--icon .bet-info__row td {
+    display: flex;
+    gap: 16px;
+}
+
+.bet-info__row {
+    background-color: #976EFF;
 }
