@@ -29,16 +29,16 @@
             <img src="img/logo.svg" alt="" title="">
         </a>
 
-        <nav class="header__menu js-menu">
+        <nav class="header__menu js-header-menu">
             <ul class="header__menu-list">
                 <li class="header__menu-item"><a href="#" class="header__menu-link">BONUS</a></li>
                 <li class="header__menu-item"><a href="#" class="header__menu-link">APP</a></li>
-            </ul>
 
-            <div class="header__auth">
-                <a href="#" class="header__button header__button--login">Log in</a>
-                <a href="#" class="header__button header__button--signup">Sign Up</a>
-            </div>
+                <li class="header__auth">
+                    <a href="#" class="header__button header__button--login">Log in</a>
+                    <a href="#" class="header__button header__button--signup">Sign Up</a>
+                </li>
+            </ul>
         </nav>
 
         <div class="header__lang">
@@ -46,7 +46,7 @@
             <span class="header__lang-code">IT</span>
         </div>
 
-        <button class="header__menu-button js-menu-toggle" aria-label="Toggle menu">
+        <button class="header__menu-button js-header-toggle" aria-label="Toggle menu">
             <svg class="burger-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <rect y="4" width="24" height="2" rx="1" class="icon-bar" />
                 <rect y="11" width="24" height="2" rx="1" class="icon-bar" />
@@ -102,8 +102,8 @@
                         </li>
                     </ul>
 
-                    <div class="sidebar__links">
-                        <div class="sidebar__nav-button">Navigation</div>
+                    <div class="sidebar__links js-sidebar-menu">
+                        <div class="sidebar__nav-button js-sidebar-toggle">Navigation</div>
                         <ul class="sidebar__links-list">
                             <li class="sidebar__links-item">
                                 <a href="#" class="sidebar__links-link">Review of 22Bet</a>
@@ -170,6 +170,7 @@
         </div>
     </main>
     <script src="./js/menu-toggle.js" defer></script>
+    <script src="./js/sidebar-toggle.js" defer></script>
 </body>
 
 </html>

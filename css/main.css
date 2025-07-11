@@ -60,20 +60,29 @@ a {
 }
 
 .header__logo {
+    flex-shrink: 0;
     width: 156px;
     height: 32px;
     margin-right: 98px;
 }
 
 .header__menu {
-    flex-grow: 1;
-    justify-content: space-between;
     gap: 20px;
+    width: 100%;
+    flex: 1;
 }
 
 .header__menu-list {
-    display: flex;
     gap: 24px;
+}
+
+.header__auth {
+    gap: 12px;
+    margin-left: auto;
+}
+
+.header__menu-item {
+    padding: 12px 0;
 }
 
 .header__menu-item a {
@@ -105,6 +114,7 @@ a {
 }
 
 .header__lang {
+    width: 100px;
     justify-content: center;
     background-color: #16225A;
     border-radius: 50px;
@@ -143,15 +153,15 @@ a {
     display: none;
 }
 
-.js-menu-toggle .burger-icon {
+.js-header-toggle .burger-icon {
     display: block;
 }
 
-.js-menu.is-open~.js-menu-toggle .burger-icon {
+.js-header-toggle.is-open .burger-icon {
     display: none;
 }
 
-.js-menu.is-open~.js-menu-toggle .close-icon {
+.js-header-toggle.is-open .close-icon {
     display: block;
 }
 
@@ -320,10 +330,7 @@ a {
 }
 
 .sidebar {
-    /* padding: 100px 20px 0 48px; */
-    padding: 100px 20px 0 20px;
-    /* max-width: 234px;
-    flex: 0 0 234px; */
+    padding: 100px 12px 0 20px;
     order: 0;
     height: 100%;
     position: relative;
@@ -332,7 +339,7 @@ a {
 .sidebar__scroll {
     overflow-y: auto;
     height: 100%;
-    /* padding: 100px 20px 0 20px; */
+    padding-right: 8px;
 }
 
 .hero {
@@ -375,21 +382,8 @@ a {
     color: #976EFF;
 }
 
-@media (max-width: 1024px) {
-    .layout {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .sidebar {
-        order: 2;
-        width: 100%;
-        max-width: none;
-        height: auto;
-    }
-
-    .sidebar__scroll {
-        height: auto;
-        overflow: visible;
-    }
+.sidebar__links-list {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
 }

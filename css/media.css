@@ -1,11 +1,47 @@
 /* media header */
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .header {
         padding: 18px 40px;
     }
 
     .header__logo {
-        margin-right: 0px;
+        margin-right: 50px;
+    }
+
+    .sidebar__scroll {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .header__logo {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(16, 7, 36, 1);
+    }
+
+    .header__menu-list {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s ease, padding 0.4s ease;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .header__auth {
+        margin-left: 0;
+    }
+
+    .js-header-menu.is-open {
+        padding: 0 20px 20px 20px;
     }
 
     .header__menu-button {
@@ -15,34 +51,6 @@
         border-radius: 8px;
         fill: #9171ff;
         stroke: #9171ff;
-    }
-
-    .header__menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(16, 7, 36, 1);
-        flex-direction: column;
-        padding: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    .header__menu.is-open {
-        max-height: 500px;
-        padding: 20px;
-    }
-
-    .header__menu-list {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .header__menu-item {
-        display: block;
-        text-align: center;
     }
 }
 
@@ -70,6 +78,7 @@
     }
 
     .header__lang {
+        width: 70px;
         padding: 6px 14px;
     }
 
@@ -88,7 +97,34 @@
     }
 }
 
-/* Hero */
+@media (max-width: 338px) {
+    .header__logo {
+        width: 130px;
+    }
+}
+
+/*media sidebar */
+@media (max-width: 1024px) {
+    .layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        order: 2;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        padding: 20px;
+    }
+
+    .sidebar__scroll {
+        height: auto;
+        overflow: visible;
+    }
+}
+
+/*media hero */
 @media (max-width: 768px) {
     .hero {
         min-height: 70vh;
