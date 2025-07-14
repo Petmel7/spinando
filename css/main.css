@@ -89,6 +89,10 @@ a {
     text-decoration: none;
 }
 
+.header__menu-link {
+    text-transform: uppercase;
+}
+
 .header__auth {
     display: flex;
     gap: 8px;
@@ -255,13 +259,14 @@ a {
     flex-wrap: nowrap;
 }
 
-.hero__title-text {
+/* decor-icon */
+.decor-icon__text {
     display: inline-block;
     text-align: center;
     max-width: 100%;
 }
 
-.hero__title-icons {
+.decor-icon {
     position: relative;
     display: inline-block;
     width: 24px;
@@ -269,24 +274,24 @@ a {
 }
 
 /* --- LEFT side: small + big --- */
-.hero__title-icons--left::before {
+.decor-icon--left::before {
     content: '';
     position: absolute;
     width: 6px;
     height: 6px;
-    background-color: #FFC700;
+    background-color: #FFD169;
     transform: rotate(45deg);
     left: 0;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
 }
 
-.hero__title-icons--left::after {
+.decor-icon--left::after {
     content: '';
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #FFC700;
+    background-color: #FFD169;
     transform: rotate(45deg);
     left: 10px;
     top: 50%;
@@ -294,28 +299,69 @@ a {
 }
 
 /* --- RIGHT side: big + small --- */
-.hero__title-icons--right::before {
+.decor-icon--right::before {
     content: '';
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #FFC700;
+    background-color: #FFD169;
     transform: rotate(45deg);
     left: 0;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
 }
 
-.hero__title-icons--right::after {
+.decor-icon--right::after {
     content: '';
     position: absolute;
     width: 6px;
     height: 6px;
-    background-color: #FFC700;
+    background-color: #FFD169;
     transform: rotate(45deg);
     left: 12px;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
+}
+
+/* Ромбики */
+/* .decor-icon__diamond {
+    background-color: #FFD169;
+    transform: rotate(45deg);
+}
+
+.decor-icon__diamond--small {
+    width: 6px;
+    height: 6px;
+}
+
+.decor-icon__diamond--big {
+    width: 10px;
+    height: 10px;
+} */
+
+/* Лінії */
+.decor-icon--with-line .decor-icon__line {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #FFD169;
+    transform: translateY(-50%);
+}
+
+.decor-icon--left .decor-icon__line {
+    left: -35px;
+}
+
+.decor-icon--right .decor-icon__line {
+    right: -30px;
+}
+
+.bet-info__cell {
+    color: #FFD169;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 /* Aside */
@@ -409,6 +455,11 @@ a {
 
 .bet-info__title {
     text-align: center;
+    color: #FFD169;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    list-style: bold;
 }
 
 .bet-info__block {
@@ -419,6 +470,11 @@ a {
     border-collapse: separate;
     border-spacing: 0 2px;
     width: 100%;
+    border-radius: 10px;
+}
+
+.bet-info__table td {
+    background-color: #3B0962;
 }
 
 .bet-info__table--icon {
@@ -430,10 +486,26 @@ a {
     gap: 16px;
 }
 
-.bet-info__row {
-    background-color: #3B0962;
-}
-
 .bet-info__row td {
     padding: 12px 20px;
+}
+
+/* Верхній лівий */
+.bet-info__table tr:first-child td:first-child {
+    border-top-left-radius: 8px;
+}
+
+/* Верхній правий */
+.bet-info__table tr:first-child td:last-child {
+    border-top-right-radius: 8px;
+}
+
+/* Нижній лівий */
+.bet-info__table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+/* Нижній правий */
+.bet-info__table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
 }
