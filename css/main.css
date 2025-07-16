@@ -452,6 +452,7 @@ a {
     font-size: 28px;
     line-height: 40px;
     list-style: bold;
+    margin-bottom: 16px;
 }
 
 .bet-info__block {
@@ -499,47 +500,182 @@ a {
 }
 
 /* offers */
-
 .offers {
     position: relative;
-    display: block;
-    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.offers__image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/home1.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .offers__image-wrapper img {
-    display: block;
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .offers-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    z-index: 1;
+    position: relative;
+    z-index: 2;
     text-align: center;
     width: 100%;
     max-width: 500px;
     padding: 20px 16px;
-
     background: linear-gradient(to bottom, rgba(59, 9, 98, 0.8), rgba(58, 73, 249, 0.8));
     border-radius: 20px;
+    color: #fff;
 }
 
 .offers-title {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 1.2;
     margin: 0 auto 20px;
 }
 
 .offers-text {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 1.5em;
     color: #FFD169;
     margin-bottom: 20px;
+}
+
+/* ========= */
+/* .info {
+    width: 100%;
+} */
+
+.info__list {
+    margin-bottom: 16px;
+}
+
+.info__title {
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFD169;
+}
+
+.info__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info__list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.info__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #FFD169;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.info__button {
+    text-align: center;
+}
+
+.custom-ol {
+    margin-bottom: 16px;
+}
+
+/* .custom-ol {
+    counter-reset: section;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-ol li {
+    counter-increment: section;
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+} */
+
+/* прапорець */
+/* .custom-ol li::before {
+    content: counter(section);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 60px;
+    background: linear-gradient(to bottom, #5721A7, #B52C9A);
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+} */
+
+/* кульки псевдодекору */
+/* .custom-ol li::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -8px;
+    width: 8px;
+    height: 8px;
+    background-color: #FFD169;
+    border-radius: 50%;
+    box-shadow: 48px 0 #FFD169;
+} */
+
+article ol>li {
+    counter-increment: ol;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+article ol>li::before {
+    content: counter(ol);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 33px;
+    background-image: url("../img/ol.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
