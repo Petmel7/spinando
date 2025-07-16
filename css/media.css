@@ -105,22 +105,16 @@
 
 /*media sidebar */
 @media (max-width: 1024px) {
-    .layout {
-        flex-direction: column;
-        height: auto;
-    }
-
     .sidebar {
-        order: 2;
-        width: 100%;
-        max-width: none;
-        height: auto;
         padding: 20px;
     }
 
-    .sidebar__scroll {
-        height: auto;
-        overflow: visible;
+    .sidebar--desktop {
+        display: none;
+    }
+
+    .sidebar--mobile {
+        display: block;
     }
 }
 
@@ -156,7 +150,7 @@
         max-width: 350px;
     }
 
-    .hero__button {
+    .section__button {
         padding: 14px 40px;
         font-size: 14px;
     }
@@ -194,8 +188,48 @@
         font-weight: 200;
     }
 
-    .hero__button {
+    .section__button {
         padding: 12px 32px;
         font-size: 13px;
+    }
+}
+
+/*media bet-info */
+@media (max-width: 834px) {
+    .bet-info__block {
+        flex-direction: column;
+    }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .bet-info__title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .bet-info__row td {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .bet-info__table--icon .bet-info__row td {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bet-info__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .bet-info__row td {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .bet-info__block-wrapper {
+        padding-bottom: 12px;
     }
 }
