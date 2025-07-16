@@ -559,10 +559,6 @@ a {
 }
 
 /* ========= */
-/* .info {
-    width: 100%;
-} */
-
 .info__list {
     margin-bottom: 16px;
 }
@@ -606,68 +602,29 @@ a {
     margin-bottom: 16px;
 }
 
-/* .custom-ol {
-    counter-reset: section;
+.info ol {
+    counter-reset: ol;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding-left: 50px;
 }
 
-.custom-ol li {
-    counter-increment: section;
-    position: relative;
-    padding-left: 70px;
-    margin-bottom: 24px;
-    font-size: 18px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-} */
-
-/* прапорець */
-/* .custom-ol li::before {
-    content: counter(section);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 60px;
-    background: linear-gradient(to bottom, #5721A7, #B52C9A);
-    color: #fff;
-    font-weight: 700;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
-} */
-
-/* кульки псевдодекору */
-/* .custom-ol li::after {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: -8px;
-    width: 8px;
-    height: 8px;
-    background-color: #FFD169;
-    border-radius: 50%;
-    box-shadow: 48px 0 #FFD169;
-} */
-
-article ol>li {
+.info ol>li {
     counter-increment: ol;
     position: relative;
-    margin-bottom: 10px;
+    padding-left: 50px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
+    font-size: 16px;
+    color: white;
 }
 
-article ol>li::before {
+.info ol>li::before {
     content: counter(ol);
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 30px;
     height: 33px;
     background-image: url("../img/ol.png");
@@ -678,4 +635,17 @@ article ol>li::before {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 16px;
+}
+
+.info ol>li::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -8px;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(to left, #FFC124, #FF8C00);
+    border-radius: 50%;
+    box-shadow: 39px 0 #FFD169;
 }
