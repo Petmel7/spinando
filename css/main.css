@@ -430,10 +430,17 @@ a {
 }
 
 /* info */
-.info {
+.section {
     background-color: #100724;
     padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
+
+/* .info {
+    background-color: #100724;
+    padding: 20px;
+} */
 
 .info__text {
     margin-bottom: 16px;
@@ -594,12 +601,8 @@ a {
     transform: translateY(-50%) rotate(45deg);
 }
 
-.info__button {
+.block__button {
     text-align: center;
-}
-
-.custom-ol {
-    margin-bottom: 16px;
 }
 
 .info ol {
@@ -645,7 +648,98 @@ a {
     left: -8px;
     width: 8px;
     height: 8px;
-    background: linear-gradient(to left, #FFC124, #FF8C00);
+    background-color: #FFC124;
     border-radius: 50%;
-    box-shadow: 39px 0 #FFD169;
+    box-shadow: 39px 0 #FFC124;
+}
+
+/*rating*/
+.rating {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr;
+    margin-bottom: 32px;
+}
+
+.rating__item {
+    background: rgba(59, 9, 98, 1);
+    border-radius: 6px;
+    padding: 16px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 114px;
+}
+
+.rating__label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.rating__bar {
+    position: relative;
+    height: 26px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    justify-content: space-between;
+}
+
+.rating__fill {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 19px;
+    border-radius: 100px;
+    background: linear-gradient(177.23deg, #9c2cf3 -13.49%, #3a49f9 109.75%);
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.rating__value {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+/* faq */
+.faq__question {
+    position: relative;
+    padding: 16px 55px 16px 20px;
+    cursor: pointer;
+    background: #3B0962;
+    color: #FFD169;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.faq__question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #FFD169;
+    transition: transform 0.3s ease;
+}
+
+.faq__item[open]>.faq__question::after {
+    content: '–';
+}
+
+.faq__item {
+    margin-bottom: 8px;
 }
