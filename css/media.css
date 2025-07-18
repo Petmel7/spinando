@@ -4,7 +4,7 @@
         padding: 18px 40px;
     }
 
-    .header__logo {
+    .logo {
         margin-right: 50px;
     }
 
@@ -14,7 +14,7 @@
 }
 
 @media (max-width: 850px) {
-    .header__logo {
+    .logo {
         margin-right: 20px;
     }
 }
@@ -66,7 +66,7 @@
         gap: 14px;
     }
 
-    .header__logo {
+    .logo {
         width: 150px;
         height: 26px;
     }
@@ -98,7 +98,7 @@
 }
 
 @media (max-width: 338px) {
-    .header__logo {
+    .logo {
         width: 130px;
     }
 }
