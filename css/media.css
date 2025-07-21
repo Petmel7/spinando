@@ -121,7 +121,7 @@
 /*media hero */
 @media (max-width: 768px) {
     .hero {
-        min-height: 70vh;
+        max-height: 320px;
     }
 
     .hero__content {
@@ -150,7 +150,7 @@
         max-width: 350px;
     }
 
-    .section__button {
+    .content__button {
         padding: 14px 40px;
         font-size: 14px;
     }
@@ -158,8 +158,7 @@
 
 @media (max-width: 480px) {
     .hero {
-
-        min-height: 50vh;
+        max-height: 250px;
     }
 
     .hero__rating-label {
@@ -188,7 +187,7 @@
         font-weight: 200;
     }
 
-    .section__button {
+    .content__button {
         padding: 12px 32px;
         font-size: 13px;
     }
@@ -216,10 +215,6 @@
         font-size: 14px;
         padding: 10px 16px;
     }
-
-    /* .bet-info__table--icon .bet-info__row td {
-        gap: 12px;
-    } */
 }
 
 @media (max-width: 480px) {
@@ -290,32 +285,6 @@
     }
 }
 
-/* @media (max-width: 400px) {
-    .offers-content {
-        width: 100%;
-        max-width: 250px;
-        padding: 10px 5px;
-    }
-
-    .offers-title {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.2;
-        margin: 0 auto 10px;
-    }
-
-    .offers-text {
-        font-weight: 400;
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .offers__button {
-        padding: 7px 26px;
-        font-size: 10px;
-    }
-} */
-
 /* media rating*/
 @media (min-width: 768px) {
     .rating {
@@ -326,5 +295,22 @@
 @media (min-width: 1024px) {
     .rating {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* media footer*/
+@media (max-width: 768px) {
+    .footer__bottom {
+        flex-direction: column;
+    }
+
+    .footer__nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__logo {
+        margin-bottom: 32px;
     }
 }

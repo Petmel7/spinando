@@ -20,10 +20,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
 </head>
 
 <body>
+    <div id="top"></div>
+
     <header class="header">
         <a href="#" class="logo">
             <img src="img/logo.svg" alt="" title="">
@@ -137,7 +140,7 @@
                 </div>
             </aside>
             <div class="main">
-                <section class="section hero">
+                <article class="content hero">
                     <div class="hero__background">
                         <img class="hero__foreground-img" src="img/hero.png" alt="Hero background" title="Hero Image">
                     </div>
@@ -165,9 +168,9 @@
                             ore per ricevere il denaro vinto.
                         </p>
 
-                        <a href="#" class="section__button button">More Info</a>
+                        <a href="#" class="content__button button">More Info</a>
                     </div>
-                </section>
+                </article>
 
                 <aside class="sidebar sidebar--mobile">
                     <div class="sidebar__scroll">
@@ -246,7 +249,7 @@
                     </div>
                 </aside>
 
-                <section class="section info">
+                <article class="content info">
                     <p class="info__text">
                         Formidabile sito di scommesse online, con 22Bet potrete realizzare i
                         vostri desideri, trasformando il vostro hobby preferito in una fonte
@@ -258,9 +261,9 @@
                         Si possono effettuare scommesse in pochi clic e bastano appena 24 ore
                         per ricevere il denaro vinto.
                     </p>
-                </section>
+                </article>
 
-                <section class="section bet-info">
+                <article class="content bet-info">
                     <h2 class="bet-info__title">
                         <span class="decor-icon decor-icon--left decor-icon--with-line">
                             <span class="decor-icon__line"></span>
@@ -343,9 +346,9 @@
                             </table>
                         </div>
                     </div>
-                </section>
+                </article>
 
-                <section class="offers">
+                <article class="offers">
                     <div class="offers__image-wrapper">
                         <img src="img/g&w.png" aria-hidden="true" alt=" Welcome Bonus Offer Image" />
                     </div>
@@ -358,11 +361,11 @@
                         </h3>
 
                         <p class="offers-text">75% up to 500$ + 50 FS!</p>
-                        <a href="#" class="offers__button section__button button">More Info</a>
+                        <a href="#" class="offers__button content__button button">More Info</a>
                     </div>
-                </section>
+                </article>
 
-                <article class="section info">
+                <article class="content info">
 
                     <h2 class="bet-info__title">
                         <span class="decor-icon decor-icon--left decor-icon--with-line">
@@ -388,7 +391,7 @@
                     <img src="img/home2.png" alt="" title="">
                 </article>
 
-                <article class="section info">
+                <article class="content info">
                     <h2 class="bet-info__title">
                         <span class="decor-icon decor-icon--left decor-icon--with-line">
                             <span class="decor-icon__line"></span>
@@ -421,11 +424,11 @@
                     </p>
 
                     <div class="block__button">
-                        <a href="#" class="section__button  button">Register now</a>
+                        <a href="#" class="content__button  button">Register now</a>
                     </div>
                 </article>
 
-                <article class="section info">
+                <article class="content info">
                     <h2 class="bet-info__title">
                         <span class="decor-icon decor-icon--left decor-icon--with-line">
                             <span class="decor-icon__line"></span>
@@ -450,7 +453,7 @@
                     <img src="img/home3.png" alt="" title="">
                 </article>
 
-                <article class="section info">
+                <article class="content info">
                     <h2 class="bet-info__title">
                         <span class="decor-icon decor-icon--left decor-icon--with-line">
                             <span class="decor-icon__line"></span>
@@ -479,7 +482,7 @@
                     </p>
                 </article>
 
-                <section class="section">
+                <article class="content">
                     <h2 class="bet-info__title">
                         <span class="decor-icon decor-icon--left decor-icon--with-line">
                             <span class="decor-icon__line"></span>
@@ -540,11 +543,11 @@
                         </div>
                     </div>
                     <div class="block__button">
-                        <a href="#" class="section__button button">More Info</a>
+                        <a href="#" class="content__button button">More Info</a>
                     </div>
-                </section>
+                </article>
 
-                <section class="faq section">
+                <article class="faq content">
                     <h2 class="faq__title bet-info__title">
                         <span class="decor-icon decor-icon--left decor-icon--with-line">
                             <span class="decor-icon__line"></span>
@@ -585,10 +588,10 @@
                             </div>
                         </details>
                     </div>
-                </section>
+                </article>
 
                 <footer class="footer">
-                    <section class="footer__payments">
+                    <article class="footer__payments">
                         <ul class="footer__payment-list">
                             <li class="footer__payment-item"><a href="#"><img src="img/footer1.svg"
                                         alt="Payment method 1"></a></li>
@@ -615,9 +618,9 @@
                             <li class="footer__payment-item"><a href="#"><img src="img/footer12.svg"
                                         alt="Payment method 12"></a></li>
                         </ul>
-                    </section>
+                    </article>
 
-                    <section class="footer__bottom">
+                    <article class="footer__bottom">
                         <a href="#" class="logo footer__logo">
                             <img src="img/logo.svg" alt="" title="">
                         </a>
@@ -658,19 +661,23 @@
                                 </address>
                             </div>
                         </nav>
-                    </section>
+                    </article>
 
                     <div class="footer__note">
                         <p>Gambling can be addictive. Play responsibly.</p>
                         <img src="img/18+.svg" alt="Only 18+ allowed">
                     </div>
                 </footer>
-
+                <a href="#top" class="up js-scroll-up">
+                    <button class="up-long" aria-label="Scroll to top"></button>
+                </a>
             </div>
         </div>
     </main>
     <script src="./js/menu-toggle.js" defer></script>
     <script src="./js/sidebar-toggle.js" defer></script>
+    <script src="./js/scrollBtn.js"></script>
+
 </body>
 
 </html>
