@@ -1,11 +1,13 @@
 
-{
-    const toggleButton = document.querySelector('.js-sidebar-toggle');
-    const menuContainer = document.querySelector('.js-sidebar-menu');
-    const menuList = menuContainer.querySelector('.sidebar__links-list');
+document.querySelectorAll('.js-sidebar-toggle').forEach((toggleButton) => {
+    const menuContainer = toggleButton.closest('.sidebar')?.querySelector('.js-sidebar-menu');
+    const menuList = menuContainer?.querySelector('.sidebar__links-list');
+
+    if (!menuContainer || !menuList) return;
+
     let isOpen = false;
 
-    toggleButton?.addEventListener('click', () => {
+    toggleButton.addEventListener('click', () => {
         if (!isOpen) {
             menuList.style.height = menuList.scrollHeight + 'px';
             isOpen = true;
@@ -18,10 +20,9 @@
         }
     });
 
-    menuList?.addEventListener('transitionend', () => {
+    menuList.addEventListener('transitionend', () => {
         if (isOpen) {
             menuList.style.height = 'auto';
         }
     });
-}
-
+});
