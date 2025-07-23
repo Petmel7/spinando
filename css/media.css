@@ -215,6 +215,7 @@
 
     .sidebar__scroll {
         padding-right: 0;
+        padding-top: 0;
     }
 
     .sidebar__links-list {
